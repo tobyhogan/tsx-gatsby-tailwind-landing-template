@@ -25,7 +25,7 @@ function Header() {
 
 
 
-
+  /*
   class MyThemeToggler extends React.Component {
     render() {
       return (
@@ -57,6 +57,8 @@ function Header() {
       )
     }
   }
+
+  */
 
 
 
@@ -95,7 +97,8 @@ function Header() {
 
         </div>
 
-        <MyThemeToggler />
+        {//<MyThemeToggler />
+        }
 
       </div>
 
