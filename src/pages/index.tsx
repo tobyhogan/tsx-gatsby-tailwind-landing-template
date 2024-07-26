@@ -16,6 +16,13 @@ import tablescreenshot from '../images/habitazen.png'
 
 
 const IndexPage: React.FC<PageProps> = () => {
+
+  if (typeof window !== 'undefined') {
+    console.log('we are running on the client')
+  } else {
+      console.log('we are running on the server');
+  }
+
   return (
     <div className="flex flex-col">
       <Header />

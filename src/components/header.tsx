@@ -51,7 +51,7 @@ function Header() {
               />
 
               <div className="Other Unselectable hover:cursor-pointer mt-6 mr-8">
-                {localStorage.getItem("theme") == "light" ? <MdOutlineDarkMode size={28}/> : <MdLightMode size={28}/>}
+                {sessionStorage.getItem("theme") == "light" ? <MdOutlineDarkMode size={28}/> : <MdLightMode size={28}/>}
               </div>
 
             </label>
@@ -60,7 +60,9 @@ function Header() {
 
 
           )}
-          </ThemeToggler>*/}
+          </ThemeToggler>
+          */
+          }
 
         </>
 
