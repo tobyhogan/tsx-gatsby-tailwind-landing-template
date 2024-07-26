@@ -1,6 +1,9 @@
 import type { GatsbyConfig } from "gatsby"
 
 module.exports = {
+  flags: {
+    DEV_SSR: true,
+  },
   plugins: [
     'gatsby-plugin-postcss',
     {
