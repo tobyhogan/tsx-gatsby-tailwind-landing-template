@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .ToggleNav {
+      display: auto;
+    }
+
+    .FullNav {
+      display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 801px) {
+
+
+  .ToggleNav {
+    display: none;
+  }
+
+  .FullNav {
+    display: auto;
+
+  }
+
+}
+
+
+.light {
+
+  header {
+
+    background-color: rgb(198, 198, 218);
+
+  }
+
+  main, footer {
+
+    background-color: rgb(226, 226, 230);
+
+  }
+
+  h1, h2, h3, p, li {
+
+    color: rgb(0, 0, 0);
+
+  }
+
+
+  header .Link1, header .Link2, header .Other {
+    color: black;
+  }
+
+
+}
+
+.dark {
+
+  header {
+
+    background-color: rgb(48, 48, 78);
+
+  }
+
+  main, footer {
+
+    background-color: rgb(113, 113, 136);
+
+  }
+
+  h1, h2, h3, p, li {
+
+    color: white;
+
+  }
+
+  
+
+  header .Link1, header .Link2, header .Other {
+    color: white;
+  }
+
+}
+
+
+h1 {
+  text-align: center;
+  font-size: x-large;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: large;
+}
+
+
+h3 {
+  text-align: center;
+  font-size: medium;
+}
+
+
+
+
+img {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin: 0 auto 8px auto;
+}
+
+
+header .Link2 {
+  margin: 0 30px 26px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+main ul li {
+    font-weight: 400;
+}
+
+.Unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
