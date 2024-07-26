@@ -7,7 +7,7 @@ import '../styles/index.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
-import tablescreenshot from '../assets/habitazen.png'
+import tablescreenshot from '../images/habitazen.png'
 
 
 

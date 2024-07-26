@@ -18,8 +18,8 @@ function Header() {
   const navList = 
     <>
     
-      <Link to="/pageone" className="Link2 hover:underline">Page 1</Link>
-      <Link to="/pagetwo" className="Link2 hover:underline">Page 2</Link>
+      <Link to="/page1" className="Link2 hover:underline">Page 1</Link>
+      <Link to="/page2" className="Link2 hover:underline">Page 2</Link>
 
     </>
 
@@ -30,7 +30,7 @@ function Header() {
     render() {
       return (
         <ThemeToggler>
-          {({ theme, toggleTheme }: any) => (
+          {({ theme, toggleTheme }) => (
             <label>
 
 
@@ -64,7 +64,7 @@ function Header() {
     
 
     <header className="NavBar flex justify-between">
-      <Link to='/index' className='Link1 text-[35px] ml-14 pt-3 pb-4'>Project Title</Link>
+      <Link to='/' className='Link1 text-[35px] ml-14 pt-3 pb-4'>Project Title</Link>
 
 
       <div className="flex flex-row">
