@@ -57,7 +57,7 @@ function Header() {
               />
 
               <div className="Other Unselectable hover:cursor-pointer mt-6 mr-8">
-                {sessionStorage.getItem("theme") == "light" ? <MdOutlineDarkMode size={28}/> : <MdLightMode size={28}/>}
+                {localStorage.getItem("theme") == "light" ? <MdOutlineDarkMode size={28}/> : <MdLightMode size={28}/>}
               </div>
 
             </label>
@@ -88,7 +88,7 @@ function Header() {
     
 
     <header className="NavBar flex justify-between">
-      <Link to='/' className='Link1 text-[35px] ml-14 pt-3 pb-4'>Project Title</Link>
+      <Link to='/' className='Link1 ml-14 pt-3 pb-4'>Project Title</Link>
 
 
       <div className="flex flex-row">
@@ -104,7 +104,7 @@ function Header() {
         <div className="ToggleNav">
 
           <button onClick={() => {setNavOpen(navOpen => !navOpen)}}>
-            <MdMenu className="ml-4 mr-8 mt-6" size={30}/>
+            <MdMenu className="ml-4 mr-8 mt-6 text-black dark:text-white" size={30} />
           </button>
 
           {navOpen ?

@@ -1,4 +1,9 @@
 module.exports = {
+
+  
+  darkMode: 'selector',
+
+
   content: [
     "./src/pages/**/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
@@ -27,5 +32,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+ 
 }

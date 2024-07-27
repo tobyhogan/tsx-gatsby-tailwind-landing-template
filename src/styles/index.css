@@ -8,18 +8,27 @@
 
 @media only screen and (max-width: 800px) {
 
-    .ToggleNav {
-      display: auto;
-    }
 
-    .FullNav {
-      display: none;
-    }
+  .Link1 {
+    font-size: 25px;
+  }
+
+  .ToggleNav {
+    display: auto;
+  }
+
+  .FullNav {
+    display: none;
+  }
 
 
 }
 
 @media only screen and (min-width: 801px) {
+
+  .Link1 {
+    font-size: 35px;
+  }
 
 
   .ToggleNav {
@@ -78,7 +87,13 @@
 
   }
 
-  main, footer {
+  footer {
+    
+    background-color: rgb(102, 102, 124);
+
+  }
+
+  main {
 
     background-color: rgb(113, 113, 136);
 
@@ -101,7 +116,6 @@
 
 h1 {
   text-align: center;
-  font-size: x-large;
 }
 
 
