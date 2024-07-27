@@ -1,0 +1,1 @@
+- add code that closes the mobile nav menu when you click away from it

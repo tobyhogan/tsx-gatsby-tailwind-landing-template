@@ -66,7 +66,7 @@ function Header() {
 
           {navOpen ?
 
-            <div className="border-1 border-slate-300 border-2 pt-4 pb-3 pl-2 pr-4 -ml-16 absolute rounded-md bg-white">
+            <div className="border-1 border-slate-300 border-2 pt-4 ml-[-53px] pb-7 pl-2 pr-8  absolute rounded-md bg-white dark:bg-slate-700">
               <ul className="flex flex-col text-start ml-3">
                 {navList}
               </ul>
