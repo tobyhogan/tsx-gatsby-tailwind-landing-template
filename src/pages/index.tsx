@@ -30,7 +30,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <img src={tablescreenshot} className="w-96 border-2 mt-12"></img>
         <h1 className="text-center mt-8 text-2xl">Headline Goes Here</h1>
         <div className="flex flex-col mx-auto w-fit mt-8">
-          <a className='rounded-md py-2 px-3 text-white bg-slate-500 hover:bg-slate-400 hover:cursor-pointer'>Action Button</a>
+          <a className='rounded-md py-2 px-5 text-white bg-slate-500 dark:bg-slate-600 hover:bg-slate-400 dark:hover:bg-slate-700 hover:cursor-pointer'>Action Button</a>
           <a href="https://habit-tracker-indol-ten.vercel.app/" className="mt-4 underline text-blue-400 mx-auto">Alternate Action</a>
         </div>
         <h1 className="text-center text-xl mt-8">Features:</h1>
