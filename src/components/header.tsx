@@ -14,6 +14,7 @@ function Header() {
 
   const [isDark, setIsDark] = React.useState(false)
 
+
   const navList = 
     <>
     
@@ -29,8 +30,10 @@ function Header() {
   React.useEffect(() => {
     if (isDark) {
       document.body.classList.add('dark');
+      document.body.classList.remove('light');
     } else {
       document.body.classList.remove('dark');
+      document.body.classList.add('light');
     }  
   }, [isDark])
 
@@ -75,8 +78,8 @@ function Header() {
 
         <div className="ThemeToggler">
 
-          { isDark ? (<button onClick={() => setIsDark(!isDark)}><MdOutlineDarkMode size={28}/></button>)
-            : (<button onClick={() => setIsDark(!isDark)}><MdLightMode size={28}/></button>) }
+          { isDark ? (<button onClick={() => setIsDark(!isDark)}><MdOutlineDarkMode size={28} className="text-black dark:text-white"/></button>)
+            : (<button onClick={() => setIsDark(!isDark)}><MdLightMode size={28} className="text-black dark:text-white"/></button>) }
 
         </div>
 
