@@ -37,7 +37,13 @@ function Header() {
 
 
 
-        {/*<ThemeToggler>
+        {
+
+
+        
+
+
+        <ThemeToggler>
           {({ theme, toggleTheme }: any) => (
             <label>
 
@@ -61,7 +67,11 @@ function Header() {
 
           )}
           </ThemeToggler>
-          */
+
+
+          
+
+
           }
 
         </>

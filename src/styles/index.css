@@ -44,11 +44,17 @@
 
   }
 
-  main, footer {
-
+  
+  main {
+    
     background-color: rgb(226, 226, 230);
-
+    
   }
+  
+  footer {
+    background-color: rgb(217, 217, 224);
+  }
+
 
   h1, h2, h3, p, li {
 
