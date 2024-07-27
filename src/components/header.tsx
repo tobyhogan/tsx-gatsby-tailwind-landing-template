@@ -15,6 +15,8 @@ function Header() {
 
   const [navOpen, setNavOpen] = useState(false)
 
+  const [isDark, setIsDark] = React.useState(false)
+
   const navList = 
     <>
     
@@ -24,63 +26,17 @@ function Header() {
     </>
 
 
+  
 
 
-  class MyThemeToggler extends React.Component {
-    render() {
+  React.useEffect(() => {
+    if (isDark) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }  
+  }, [isDark])
 
-      return (
-
-        <>
-
-        <div><p>hello world</p></div>
-
-
-
-        {
-
-
-        
-
-
-
-        <ThemeToggler>
-          {({ theme, toggleTheme }: any) => (
-            <label>
-
-
-
-              <input
-                type="checkbox"
-                onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-                checked={theme == 'dark'}
-                className="hidden"
-              />
-
-              <div className="Other Unselectable hover:cursor-pointer mt-6 mr-8">
-                {localStorage.getItem("theme") == "light" ? <MdOutlineDarkMode size={28}/> : <MdLightMode size={28}/>}
-              </div>
-
-            </label>
-
-
-
-
-          )}
-          </ThemeToggler>
-
-
-          
-
-
-          }
-
-        </>
-
-          
-      )
-    }
-  }
 
 
 
@@ -105,7 +61,7 @@ function Header() {
         <div className="ToggleNav">
 
           <button onClick={() => {setNavOpen(navOpen => !navOpen)}}>
-            <MdMenu className="ml-4 mr-8 mt-6 text-black dark:text-white" size={30} />
+            <MdMenu className="ml-4 mr-8 mt-4 text-black dark:text-white" size={30} />
           </button>
 
           {navOpen ?
@@ -120,7 +76,12 @@ function Header() {
 
         </div>
 
-        <MyThemeToggler />
+        <div className="ThemeToggler">
+
+          { isDark ? (<button onClick={() => setIsDark(!isDark)}><MdOutlineDarkMode size={28}/></button>)
+            : (<button onClick={() => setIsDark(!isDark)}><MdLightMode size={28}/></button>) }
+
+        </div>
 
 
       </div>

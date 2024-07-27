@@ -21,6 +21,11 @@
     display: none;
   }
 
+  .ThemeToggler {
+    margin-top: 16px;
+    margin-right: 8vw;
+  }
+
 
 }
 
@@ -38,6 +43,11 @@
   .FullNav {
     display: auto;
 
+  }
+
+  .ThemeToggler {
+    margin-top: 25px;
+    margin-right: 4vw;
   }
 
 }
