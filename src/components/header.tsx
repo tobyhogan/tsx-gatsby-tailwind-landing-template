@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-
-
 import { MdMenu, MdOutlineDarkMode, MdLightMode, MdLight, MdDarkMode } from "react-icons/md";
 
 import '../styles/global.css'
