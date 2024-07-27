@@ -16,8 +16,8 @@ const Page1: React.FC<PageProps> = () => {
   return (
     <div className="">
       <Header />
-      <main className="">
-        <h1 className="text-3xl pt-8">Page 1</h1>
+      <main className="flex flex-col">
+        <h1 className="text-3xl pt-16 mb-[71vh]">Page 1</h1>
       </main>
       <Footer/>
 

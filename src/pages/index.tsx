@@ -7,9 +7,7 @@ import '../styles/index.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
-import tablescreenshot from '../images/habitazen.png'
-
-
+import tablescreenshot from '../assets/project-image.png'
 
 
 
@@ -35,7 +33,7 @@ const IndexPage: React.FC<PageProps> = () => {
         </div>
         <h1 className="text-center text-xl mt-8">Features:</h1>
         <ul className="mx-auto w-fit mt-3">
-          <li>- Feature1</li>
+          <li>- Feature 1</li>
           <li>- Feature 2</li>
           <li>- Feature 3</li>
         </ul>
