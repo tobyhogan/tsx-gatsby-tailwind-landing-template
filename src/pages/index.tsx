@@ -33,7 +33,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <a href="https://habit-tracker-indol-ten.vercel.app/" className="mt-4 underline text-blue-400 mx-auto">Alternate Action</a>
         </div>
         <h1 className="text-center text-xl mt-8">Features:</h1>
-        <ul className="mx-auto w-fit mt-3 mb-[110px]">
+        <ul className="mx-auto w-fit mt-3 mb-[111px]">
           <li>- Feature 1</li>
           <li>- Feature 2</li>
           <li>- Feature 3</li>
