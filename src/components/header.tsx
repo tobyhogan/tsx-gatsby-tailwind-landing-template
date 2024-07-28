@@ -12,7 +12,7 @@ function Header() {
 
   const [navOpen, setNavOpen] = useState(false)
 
-  const [isDark, setIsDark] = React.useState(false)
+  const [isDark, setIsDark] = React.useState(null)
 
 
   const navList = 
@@ -28,13 +28,18 @@ function Header() {
 
 
   React.useEffect(() => {
+    
     if (isDark) {
       document.body.classList.add('dark');
       document.body.classList.remove('light');
-    } else {
+
+
+    } else if (isDark == false) {
       document.body.classList.remove('dark');
       document.body.classList.add('light');
     }  
+
+
   }, [isDark])
 
 
