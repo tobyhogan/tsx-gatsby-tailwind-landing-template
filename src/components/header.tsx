@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 
 import { MdMenu, MdOutlineDarkMode, MdLightMode, MdLight, MdDarkMode } from "react-icons/md";
@@ -15,6 +15,19 @@ function Header() {
   const [isDark, setIsDark] = React.useState(null)
 
 
+  
+  
+  useEffect(() => {
+
+    localStorage.setItem("test", "yes")
+
+    console.log(localStorage)
+
+
+
+  }, [])
+
+
   const navList = 
     <>
     
@@ -27,7 +40,7 @@ function Header() {
   
 
 
-  React.useEffect(() => {
+  useEffect(() => {
     
     if (isDark) {
       document.body.classList.add('dark');
