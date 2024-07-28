@@ -26,7 +26,6 @@ function Header() {
 
   useEffect(() => {
 
-    console.log("2 effect running")
 
     if (!localStorage.getItem("theme")) {
 
@@ -63,11 +62,9 @@ function Header() {
 
   function handleToggleTheme() {
 
-    console.log("1 works")
 
     if (localStorage.getItem("theme") == "light") {
 
-      console.log("3 change to dark")
 
       localStorage.setItem("theme", "dark")
 
@@ -94,7 +91,7 @@ function Header() {
 
 
 
-  
+
 
   return (
     
