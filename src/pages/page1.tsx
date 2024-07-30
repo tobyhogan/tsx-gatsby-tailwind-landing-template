@@ -17,7 +17,10 @@ const Page1: React.FC<PageProps> = () => {
     <div className="">
       <Header />
       <main className="flex flex-col">
-        <h1 className="text-3xl pt-16 mb-[71vh]">Page 1</h1>
+        <h1 className="text-3xl pt-16">Page 1</h1>
+        <p className="mx-auto w-[50%] mt-8 mb-[59.9vh] text-center">
+          This is some page 1 content here, you can write whatever you want about your project here, details and especially specifics to what might be on page 1
+        </p>
       </main>
       <Footer/>
 

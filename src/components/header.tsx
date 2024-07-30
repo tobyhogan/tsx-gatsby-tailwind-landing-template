@@ -29,11 +29,23 @@ function Header() {
 
     if (!localStorage.getItem("theme")) {
 
+      
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 
-      localStorage.setItem("theme", "light")
-      document.body.classList.add('light')
+        localStorage.setItem("theme", "dark")
+        document.body.classList.add('dark')
+  
+        setIsDark(true)
+          
 
-      setIsDark(false)
+      } else {
+
+        localStorage.setItem("theme", "dark")
+        document.body.classList.add('dark')
+  
+        setIsDark(true)
+
+      }
 
 
     } else if (localStorage.getItem("theme") == "light") {
