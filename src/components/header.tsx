@@ -114,6 +114,21 @@ function Header() {
 
       <div className="flex flex-row">
 
+        { /*
+
+        <div className="border-4 border-red-600 w-fit h-fit rounded-lg mr-16 px-2 py-1 mt-2">
+          <p>Selected Theme:</p>
+          <select className="" id="theme-select">
+            <option value="volvo">Minimal</option>
+            <option value="saab">Gradient1</option>
+
+          </select>
+        </div>
+
+        */ }
+
+
+
         <div className="FullNav">
 
           <ul className="flex mt-7 mr-3">
@@ -139,6 +154,7 @@ function Header() {
           : null }
 
         </div>
+
 
         <div className="ThemeToggler">
 
